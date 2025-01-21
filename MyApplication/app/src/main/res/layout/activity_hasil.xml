@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Pendaftaran"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+<LinearLayout
+    android:id="@+id/LL1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:text="Nama"
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ED1"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:hint="-" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@id/textView2"
+            android:layout_width="155dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="Alamat"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/ED2"
+            android:layout_below="@id/ED1"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="200dp"
+            android:hint="-" />
+        <TextView
+            android:layout_below="@id/textView3"
+            android:id="@+id/textView4"
+            android:layout_width="155dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="Email"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/ED3"
+            android:layout_below="@id/ED2"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:hint="-" />
+        <TextView
+            android:layout_below="@id/textView4"
+            android:id="@+id/textView5"
+            android:layout_width="155dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="Nomor HP"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/ED4"
+            android:layout_below="@id/ED3"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:hint="-" />
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_below="@id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="125dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Agama"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="200dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/Jenis_kelamin"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="200dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/spinner"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/Agama"
+                android:minHeight="48dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/LL2">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple_200"
+            android:backgroundTint="#FFEB3B"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL3"
+        android:text="Kembali"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

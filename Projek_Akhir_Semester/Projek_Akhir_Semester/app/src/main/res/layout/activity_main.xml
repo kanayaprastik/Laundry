@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradientutama">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bungkusutama"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/abeezee"
+            android:text="My Project"
+            android:textColor="#F3F1F1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bungkusutama"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#8EC2DA"
+            app:cardCornerRadius="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="9dp"
+                android:backgroundTint="#FCFCFD"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/welkom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Date"
+                        android:textSize="15sp" />
+
+
+                    <ImageView
+                        android:id="@+id/gmbr"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/profilku" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gmbr"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="14dp"
+                        android:fontFamily="@font/cambo"
+                        android:text="My Profile"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/utama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Hello Dimas,"
+                        android:textColor="@color/black"
+                        android:textSize="27sp" />
+
+                    <TextView
+                        android:id="@+id/welkom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/utama"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Welcome to Dashboard"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="183dp"
+                android:fontFamily="@font/abeezee"
+                android:text="Subject"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#4D8CA8"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ke2"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ke3"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/ke2"
+                            app:cardCornerRadius="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ke4"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/ke3"
+                            app:cardCornerRadius="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ke5"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/ke4"
+                            app:cardCornerRadius="20dp" />
+
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/bungkusutama"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/kotakatas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bungkusformulir"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="45dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D35656">
+
+                        <ImageView
+                            android:id="@+id/Gutama"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/comment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Gutama"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/amiko_semibold"
+                            android:text="Design Formulir"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bungkuscalculator"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="45dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D35656">
+
+                        <ImageView
+                            android:id="@+id/Gdua"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/calculator" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Gdua"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/amiko_semibold"
+                            android:text="Calculator"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kotakatas"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bungkuskonversi"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="45dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D35656">
+
+                        <ImageView
+                            android:id="@+id/Gempat"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/reuse" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Gempat"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/amiko_semibold"
+                            android:text="Konversi Suhu"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bungkusprofil"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="45dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D35656">
+
+                        <ImageView
+                            android:id="@+id/Glima"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/fisherman" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Glima"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/amiko_semibold"
+                            android:text="Profile"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+  </RelativeLayout>

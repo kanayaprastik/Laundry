@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulir Pendaftaran"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EDnama"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/EDalamat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:hint="Alamat" />
+
+    <EditText
+        android:id="@+id/EDemail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/EDnomor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="10dp"
+        android:hint="Nomor HP"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="125dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:text="Agama"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerJK"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/Jenis_kelamin"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAgama"
+                android:layout_width="147dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/spinnerJK"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/Agama"
+                android:minHeight="48dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/red"
+        android:text="Simpan" />
+
+</RelativeLayout>

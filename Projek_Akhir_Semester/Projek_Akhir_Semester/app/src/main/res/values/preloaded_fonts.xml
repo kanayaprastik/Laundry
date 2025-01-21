@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
+        <item>@font/amiko_semibold</item>
+        <item>@font/cambo</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/delius_swash_caps</item>
+        <item>@font/mali_extralight</item>
+    </array>
+</resources>
